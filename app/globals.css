@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 
+.bgHero{
+    background-image: url("/bgHero.svg") !important ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+.herobtn{
+    animation: moveupdown 5s infinite both;
+    
+    @apply dark:bg-black/50 bg-black/5 mt-5 border-1 z-20 border-t-pink-500 border-l-purple-500 border-r-orange-500 border-b-violet-600 backdrop-blur-lg; 
+}
+@keyframes moveupdown {
+    50%{
+        transform: translateY(50px);
+    }
+}
